@@ -8,6 +8,8 @@ import { FormWeapon } from './ComponentScreen/FormWeapons';
 import { FormPower } from './ComponentScreen/FormPower';
 import { FormInfo } from './ComponentScreen/FormInfo';
 import { HomePage } from './ComponentScreen/HomePage';
+import { Login } from './ComponentScreen/Login';
+import { FormUserCreation } from './ComponentScreen/FormUserCreation';
 
 export const App = () => {
   return (
@@ -21,7 +23,9 @@ export const App = () => {
           <Route path='/weapon' element={<FormWeapon/>} />
           <Route path='/power' element={<FormPower/>} />
           <Route path='/info' element={<FormInfo/>} />
-          <Route path='/' element={<HomePage/>} />
+          <Route path='/' element={<Login/>} />
+          <Route path='/createUser' element={<FormUserCreation/>} />
+          
         </Routes>
       </BrowserRouter>
     </>

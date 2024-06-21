@@ -1,4 +1,13 @@
 body {
   background-color: black;
   color: #fcf6f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+#main {
+  text-align: left;
+  margin-top: 100px;
+}
+
