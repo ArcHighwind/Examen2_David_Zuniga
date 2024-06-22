@@ -9,6 +9,12 @@ export const Login = () => {
         event.preventDefault();
         location.href = '/createUser'
     }
+    
+    const LoginSuccess = ()=>{
+        location.href = '/home'
+    }
+
+
 
     return (
         <>
@@ -24,7 +30,7 @@ export const Login = () => {
                         <label className="form-label">Password</label>
                         <input onChange={changeHandler} name="user_password" type='password' className="form-control" />
                     </div>
-                    <button type='submit' className='btn btn-primary w-100 mb-3'>Login</button>
+                    <button type='submit' onClick={LoginSuccess} className='btn btn-primary w-100 mb-3'>Login</button>
                     <button type='button' onClick={registerUser} className='btn btn-primary w-100 mb-3'>Register</button>
                     
                 </form>
