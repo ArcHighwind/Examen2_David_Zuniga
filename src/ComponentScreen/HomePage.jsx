@@ -1,18 +1,41 @@
 import React from 'react'
 
 export const HomePage = () => {
+
+  const APersonaje = ()=>{
+    location.href = '/personajes'
+  }
+  const APower = ()=>{
+    location.href = '/power'
+  }
+  const AClass = ()=>{
+    location.href = '/class'
+  }
+  const AWeapon = ()=>{
+    location.href = '/weapon'
+  }
+  const AInfo = ()=>{
+    location.href = '/info'
+  }
+
+
   return (
     <>
         <div>
-            <h3>Bienvenido a la Pagina Principal!</h3>
-            <h4>Aqui podras crear tu personaje. Solo sigue las siguientes instrucciones: </h4>
-            <p>Tendras que escribir en la URL lo siguiente para poder acceder a las diferentes ramas de la app. Incluire botones una vez que aprenda como implementar saltos de pagina en react/vite asi que espero me disculpen estas molestias.</p>
+            <h3>Welcome to your home Page!</h3>
+            <h4>It's quite empty at the moment, but many features will be coming soon!</h4>
             <br/>
-            <p>1. Para agregar un personaje nuevo: "/personajes" </p>
-            <p>2. Para agregar un poder nuevo: "/power" </p>
-            <p>3. Para agregar una clase/profesion nueva: "/class" </p>
-            <p>4. Para agregar una arma nueva: "/weapon" </p>
-            <p>5. Para agregar informacion personal del personaje: "/info" </p>
+            <h4>Click on the buttons to start making your character.</h4>
+            <p>Create the Name and give your character their age here: </p>
+            <button onClick={APersonaje} type='button' className='btn btn-info w-100 mb-3'>Character</button>
+            <p>Give them their unique power here:</p>
+            <button onClick={APower} type='button' className='btn btn-danger w-100 mb-3'>Unique Power</button>
+            <p>Create their Class:</p>
+            <button onClick={AClass} type='button' className='btn btn-success w-100 mb-3'>Class</button>
+            <p>Give them their preffered weapon:</p>
+            <button onClick={AWeapon} type='button' className='btn btn-secondary w-100 mb-3'>Preffered Weapon</button>
+            <p>Write a bit about them:</p>
+            <button onClick={AInfo} type='button' className='btn btn-light w-100 mb-3'>Character Info</button>
         </div>
     </>
   )

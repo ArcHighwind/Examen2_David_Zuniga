@@ -25,6 +25,7 @@ export const App = () => {
           <Route path='/info' element={<FormInfo/>} />
           <Route path='/' element={<Login/>} />
           <Route path='/createUser' element={<FormUserCreation/>} />
+          <Route path='/home' element={<HomePage/>} />
           
         </Routes>
       </BrowserRouter>

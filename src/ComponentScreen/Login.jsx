@@ -5,6 +5,10 @@ export const Login = () => {
 
     const {dataForm, changeHandler, submitHandler} = LoginFormHook();
 
+    const registerUser = ()=>{
+        event.preventDefault();
+        location.href = '/createUser'
+    }
 
     return (
         <>
@@ -21,7 +25,7 @@ export const Login = () => {
                         <input onChange={changeHandler} name="user_password" type='password' className="form-control" />
                     </div>
                     <button type='submit' className='btn btn-primary w-100 mb-3'>Login</button>
-                    <button className='btn btn-primary w-100 mb-3'>Register</button>
+                    <button type='button' onClick={registerUser} className='btn btn-primary w-100 mb-3'>Register</button>
                     
                 </form>
             </div>
